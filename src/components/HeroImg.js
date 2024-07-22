@@ -17,7 +17,7 @@ export default function HeroImg() {
         <p>GitHub Profile Finder is a powerful tool designed to help you effortlessly search for GitHub profiles.
           </p>
         <div>
-            <Link  onClick={handleClick} to = "/project" className="btn">Finder</Link>
+            <Link  onClick={handleClick} to = "/finder" className="btn">Finder</Link>
             <Link   to = "/contact" className="btn">Queries</Link>
         </div>
        </div>

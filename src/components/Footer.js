@@ -1,6 +1,6 @@
 import { FaHome, FaPhone ,FaMailBulk, FaFacebook, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa"
 import "./FooterStyle.css"
-
+import { Link } from "react-router-dom"
 import React from 'react'
 
 export default function Footer() {
@@ -16,33 +16,27 @@ export default function Footer() {
   return (
     <div className="footer">
       <div className="footer-container">
-        <div className="left">
-            <div className="location">
-                <FaHome size={25} style={{color:"white",marginRight:"2rem"}}/>
-                <p>72 A Ambedkar nagar,
-                Chennai.</p>
-                
-            </div>
-            <div className="phone">
-                <h4><FaPhone size={20} style={{color:"white",marginRight:"2rem"}}/>+91 6382819707</h4>
-            </div>
-            <div className="email">
-            <h4><FaMailBulk size={20} style={{color:"white",marginRight:"2rem"}}/>keerthiram2612@gmail.com</h4>
-            </div>
+        <div className="contact-us">
+         <Link to ="queries"><h4>Contact Us</h4></Link>
+          <p>Email: <a href="mailto:support@githubfinderapp.com">support@githubfinderapp.com</a></p>
         </div>
-        <div className="right">
-          <h4>About me</h4>
-          <p>This is Keerthana FrontEnd developer .
-            I enjoy discussing <br/>
-            new projects and design 
-            challenges. </p>
-            <div className="social">
+        <div className="footer-bottom">
+        <p>© 2024 GitHub Profile Finder. All rights reserved.</p>
+      </div>
+      <div className="legal">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+          </ul>
+        </div>
+      <div className="social">
         <FaLinkedin onClick={handleClick}size={30} style={{color:"white",marginRight:"1rem"}}/>
         <FaInstagram onClick={handleClick1}size={30} style={{color:"white",marginRight:"1rem"}}/>
         <FaGithub  onClick={handleClick2}size={30} style={{color:"white",marginRight:"1rem"}}/>
         </div>
         </div>
       </div>
-    </div>
   )
 }

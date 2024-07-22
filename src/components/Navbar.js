@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     <div className={color ? "header header-bg":"header"}>
       <Link to="/">
-        <h1>Portfolio</h1>
+        <h1>GiPFi</h1>
       </Link>
       <ul className={click?"nav-menu active":"nav-menu"}>
         <li>
@@ -29,13 +29,10 @@ export default function Navbar() {
             <Link to="/about">About</Link>
         </li>
         <li>
+            <Link to="/finder">Finder</Link>
+        </li>
+        <li>
             <Link to="/contact">Contact</Link>
-        </li>
-        <li>
-            <Link to="/project">Project</Link>
-        </li>
-        <li>
-            <Link to="/certificate">Certificates</Link>
         </li>
       </ul>
       <div className="hamburger" onClick={handleClick}>
