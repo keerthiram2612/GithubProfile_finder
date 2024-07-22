@@ -1,0 +1,77 @@
+.hero-image{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    height: 60vh;
+    position: relative;
+}
+
+
+.github-profile-container {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    
+  }
+  
+  .input-wrapper {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-wrapper input {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .input-wrapper button {
+    padding: 5px 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #00f4ec;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .user{
+      padding: 15px;
+      border-radius: 10px;
+      border: 1px solid;
+  }
+  
+  .avatar{
+      height: 150px;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+  }
+  
+  
+  .name-container{
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+  }
+  
+  .name-container p{
+      margin: 0px;
+      font-size: 20px;
+      font-weight: bold;
+  }
+  
+  .profile-info div{
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      font-size: 20px;
+      font-weight: bold;
+  }
