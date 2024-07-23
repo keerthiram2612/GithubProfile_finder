@@ -8,7 +8,7 @@ export default function About() {
   return (
     <div>
      <Navbar/>
-     <HeroImage2 heading = "ABOUT" text = "Im a friendly Front-End Developer."/>
+     <HeroImage2 heading = "ABOUT" />
      <AboutContent/>
      <Footer/>
     </div>

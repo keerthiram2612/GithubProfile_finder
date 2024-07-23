@@ -8,8 +8,8 @@ export default function AboutContent() {
   return (
     <div className='about'>
       <div className='left'>
-        <h1>Who Am I?</h1>
-        <p>I am a react front-end developer. I create responsive & secure websites for my clients.</p>
+        <h1>What is GiPFi?</h1>
+        <p>Welcome to GitHub Profile Finder, a powerful and user-friendly application built with React! Our tool allows you to easily search for GitHub profiles and explore detailed information about developers and repositories. Whether you're a recruiter, a fellow developer, or just curious about a specific GitHub user, our application provides a seamless experience to find and view profiles effortlessly.</p>
         <Link to = "/contact">
         <button className='btn'>contact</button>
         </Link>
@@ -17,10 +17,10 @@ export default function AboutContent() {
       <div className='right'>
         <div className='img-container'>
           <div className='img-stack top'>
-              <img src= {React1}  className="img" alt='image'/>
+              <img src= {React2}  className="img" alt='image'/>
             </div>
           <div className='img-stack bottom'>
-              <img src= {React2}  className="img" alt='image'/>
+              <img src= {React1}  className="img" alt='image'/>
             </div>
         </div>
       </div>
