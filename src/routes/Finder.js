@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
-import GithubProfile from "../components/GithubProfile"
+import GithubProfileFinder from '../components/GithubProfileFinder'
 
 export default function Project() {
   return (
     <div>
       <Navbar/>
-      <GithubProfile/>
+       <GithubProfileFinder/>
        <Footer/>
     </div>
   )
