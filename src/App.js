@@ -5,6 +5,7 @@ import Contact from "./routes/Contact"
 import About from "./routes/About"
 import {Routes,Route} from "react-router-dom"
 import Finder from "./routes/Finder"
+import Repositories from "./components/Repositories";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Route path = "/contact" element ={<Contact/>}/>
       <Route path = "/finder" element ={<Finder/>}/>
       <Route path = "/about" element ={<About/>}/>
+      <Route path="/repositories/:login" element={<Repositories />} />
     </Routes>
    </>
   );
