@@ -4,12 +4,19 @@ import { Link } from 'react-router-dom'
 import React1 from "../assets/react1.jpg"
 import React2 from "../assets/react2.webp"
 
+
 export default function AboutContent() {
   return (
     <div className='about'>
       <div className='left'>
         <h1>What is GiPFi?</h1>
-        <p>Welcome to GitHub Profile Finder, a powerful and user-friendly application built with React! Our tool allows you to easily search for GitHub profiles and explore detailed information about developers and repositories. Whether you're a recruiter, a fellow developer, or just curious about a specific GitHub user, our application provides a seamless experience to find and view profiles effortlessly.</p>
+        <div className = "container">
+        <div className = "row">
+          <div className = "col-md-4">
+          <p>Welcome to GitHub Profile Finder, a powerful and user-friendly application built with React! Our tool allows you to easily search for GitHub profiles and explore detailed information about developers and repositories. </p>
+          </div>
+        </div>
+        </div>
         <Link to = "/contact">
         <button className='btn'>contact</button>
         </Link>
@@ -26,4 +33,5 @@ export default function AboutContent() {
       </div>
     </div>
   )
+  
 }
